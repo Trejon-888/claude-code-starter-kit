@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.pnp.*
+.yarn/
+
+# Build
+dist/
+build/
+.next/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test
+coverage/
+
+# Claude Code plan artifacts (auto-cleaned by save-plan hook)
+# Plans are saved to .agents/plans/ by the hook

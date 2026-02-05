@@ -1,0 +1,65 @@
+{
+  "skills": {
+    "continue": {
+      "path": ".claude/skills/continue/SKILL.md",
+      "description": "Load project context, alignment audit, status check, suggest next action. Auto-invoke at session start, after context switches, or when user says 'continue', 'resume', 'what's next', 'status check'."
+    },
+    "done": {
+      "path": ".claude/skills/done/SKILL.md",
+      "description": "Self-evolving session completion: validate, sync, heal, evolve, report, commit. Auto-invoke when user says 'done', 'finished', 'wrap up', 'commit this', 'push it', 'ship it'."
+    },
+    "piv": {
+      "path": ".claude/skills/piv/SKILL.md",
+      "description": "Self-recursive development loop: research, plan, execute, validate, heal, repeat. Auto-invoke when user says 'piv', 'autopilot', 'ship it', 'full validation', 'keep going until done'."
+    }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/load-project-context.sh"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/pre-tool-guard.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/save-plan.sh"
+          },
+          {
+            "type": "command",
+            "command": ".claude/hooks/post-edit-typecheck.sh"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/pre-compact-save.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
