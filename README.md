@@ -2,7 +2,7 @@
   <img src=".github/assets/ai-agent.png" alt="Claude Code Starter Kit" width="180" />
 </p>
 
-<h1 align="center">claude-code-starter-kit</h1>
+<h1 align="center">ix-claude-code-starter-kit</h1>
 
 <p align="center">
   <strong>Give Claude Code a memory, a workflow, and the ability to improve itself.</strong>
@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="#-get-it"><img src="https://img.shields.io/badge/Get_Started-30s_setup-10b981?style=for-the-badge" alt="Get Started" /></a>
-  <a href="https://github.com/Trejon-888/claude-code-starter-kit/stargazers"><img src="https://img.shields.io/github/stars/Trejon-888/claude-code-starter-kit?style=for-the-badge&color=fbbf24" alt="Stars" /></a>
+  <a href="https://github.com/Trejon-888/ix-claude-code-starter-kit/stargazers"><img src="https://img.shields.io/github/stars/Trejon-888/ix-claude-code-starter-kit?style=for-the-badge&color=fbbf24" alt="Stars" /></a>
   <a href="https://app.infinitxai.com"><img src="https://img.shields.io/badge/IX_System-Upgrade-6366f1?style=for-the-badge" alt="IX System" /></a>
 </p>
 
@@ -103,7 +103,7 @@ That's the loop. **`/continue` → build → `/done`.** Your project remembers e
 
 Just tell Claude:
 
-> *"Create a new project from the Trejon-888/claude-code-starter-kit template, then open CLAUDE.md and help me fill it in for my project."*
+> *"Create a new project from the Trejon-888/ix-claude-code-starter-kit template, then open CLAUDE.md and help me fill it in for my project."*
 
 That's it. Claude handles the rest. Your first `/continue` loads your project context automatically.
 
@@ -116,7 +116,7 @@ Say this to Claude:
 Claude will walk you through everything — installing, cloning, configuring. Or do it yourself:
 
 ```bash
-gh repo create my-project --template Trejon-888/claude-code-starter-kit --public
+gh repo create my-project --template Trejon-888/ix-claude-code-starter-kit --public
 cd my-project
 claude
 ```

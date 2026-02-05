@@ -93,4 +93,4 @@ Your Claude Code workflow toolkit. Use independently or chain together.
 
 ---
 
-*Powered by [claude-code-starter-kit](https://github.com/Trejon-888/claude-code-starter-kit) from [INFINITX](https://app.infinitxai.com) — AI-native business infrastructure.*
+*Powered by [ix-claude-code-starter-kit](https://github.com/Trejon-888/ix-claude-code-starter-kit) from [INFINITX](https://app.infinitxai.com) — AI-native business infrastructure.*
